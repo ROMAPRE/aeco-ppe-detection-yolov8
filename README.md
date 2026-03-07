@@ -344,6 +344,6 @@ El proyecto incluye un paquete PDF con la documentación resumida:
 
 [Descargar Diapositivas](docs/Diapositivas.pdf)
 
-### Mini-informe
+### Mini_informe
 
 [Descargar Mini_informe](docs/Mini_informe.pdf)
