@@ -1,7 +1,10 @@
-
 # Detección de Equipos de Protección Personal (PPE) en Obras AECO usando YOLOv8
 
 ![Predicción del modelo](results/evidence/Predicción.png)
+
+*Ejemplo de detección automática de trabajadores y equipos de protección personal utilizando YOLOv8.*
+
+## 1. Descripción del Problema (AECO)
 
 ## 1. Descripción del Problema (AECO)
 
