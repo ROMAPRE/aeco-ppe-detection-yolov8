@@ -217,7 +217,7 @@ El **recall es relativamente bajo (≈0.17)**, lo cual es esperable debido al ta
 
 El valor de **mAP@50 alcanza aproximadamente 0.20**, mientras que **mAP@50-95 se sitúa cerca de 0.13**, lo cual es consistente con datasets pequeños en tareas multiclase de detección de objetos.
 
-En conjunto, los resultados muestran que el modelo constituye un **prototipo funcional para la detección automática de equipos de protección personal (PPE) en obras de construcción**. El rendimiento podría mejorar mediante la ampliación del dataset y el entrenamiento con GPU.
+En conjunto, los resultados muestran que el modelo representa un **prototipo experimental inicial** para la detección automática de equipos de protección personal (PPE) en obras de construcción. El rendimiento podría mejorar mediante la ampliación del dataset y el entrenamiento utilizando GPU.
 
 
 ### Análisis de la matriz de confusión
@@ -322,21 +322,19 @@ Las principales tecnologías utilizadas en este proyecto fueron:
 
 ## 16. Modelo entrenado
 
-Debido al tamaño del archivo, el modelo entrenado (best.pt) se encuentra disponible en el siguiente enlace:
+El modelo entrenado (`best.pt`) generado durante el proceso de entrenamiento
+se incluye en este repositorio dentro de:
+
+results/evidence/best.pt
+
+Debido a posibles limitaciones de descarga en GitHub, el archivo también
+se encuentra disponible en el siguiente enlace externo:
 
 https://drive.google.com/file/d/1OY66H3SZTURFskA8Cf_CdRIFCpKmIAEL/view
 
 Permisos: acceso público en modo lectura (download enabled).
 
-## 17. Pesos del modelo
-
-El archivo `best.pt` contiene los pesos del modelo YOLOv8 entrenado durante el proceso de entrenamiento.
-
-Puede descargarse aquí:
-
-[Descargar best.pt](https://github.com/ROMAPRE/aeco-ppe-detection-yolov8/blob/main/results/best.pt)
-
-## 18. Paquete PDF del proyecto
+## 17. Paquete PDF del proyecto
 
 El proyecto incluye un paquete PDF con la documentación resumida:
 
