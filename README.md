@@ -335,3 +335,15 @@ El archivo `best.pt` contiene los pesos del modelo YOLOv8 entrenado durante el p
 Puede descargarse aquí:
 
 [Descargar best.pt](https://github.com/ROMAPRE/aeco-ppe-detection-yolov8/blob/main/results/best.pt)
+
+## 18. Paquete PDF del proyecto
+
+El proyecto incluye un paquete PDF con la documentación resumida:
+
+### Diapositivas
+
+[Descargar Diapositivas](docs/Diapositivas.pdf)
+
+### Mini-informe
+
+[Descargar Mini_informe](docs/Mini_informe.pdf)
