@@ -327,3 +327,11 @@ Debido al tamaño del archivo, el modelo entrenado (best.pt) se encuentra dispon
 https://drive.google.com/file/d/1OY66H3SZTURFskA8Cf_CdRIFCpKmIAEL/view
 
 Permisos: acceso público en modo lectura (download enabled).
+
+## 17. Pesos del modelo
+
+El archivo `best.pt` contiene los pesos del modelo YOLOv8 entrenado durante el proceso de entrenamiento.
+
+Puede descargarse aquí:
+
+[Descargar best.pt](https://github.com/ROMAPRE/aeco-ppe-detection-yolov8/blob/main/results/best.pt)
