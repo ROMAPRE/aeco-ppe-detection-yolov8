@@ -1,6 +1,8 @@
 
 # Detección de Equipos de Protección Personal (PPE) en Obras AECO usando YOLOv8
 
+![Predicción del modelo](results/evidence/Predicción.png)
+
 ## 1. Descripción del Problema (AECO)
 
 En obras de construcción (sector AECO: Architecture, Engineering, Construction & Operations) es fundamental garantizar que los trabajadores utilicen correctamente los **Equipos de Protección Personal (PPE)** como cascos y chalecos reflectantes.
