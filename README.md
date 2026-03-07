@@ -319,3 +319,11 @@ Las principales tecnologías utilizadas en este proyecto fueron:
 - **PyTorch** – framework de deep learning
 - **Google Colab** – entorno de ejecución en la nube
 - **Jupyter Notebook** – desarrollo del pipeline de entrenamiento
+
+## 16. Modelo entrenado
+
+Debido al tamaño del archivo, el modelo entrenado (best.pt) se encuentra disponible en el siguiente enlace:
+
+https://drive.google.com/file/d/1OY66H3SZTURFskA8Cf_CdRIFCpKmIAEL/view
+
+Permisos: acceso público en modo lectura (download enabled).
