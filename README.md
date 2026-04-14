@@ -1,6 +1,6 @@
 # Detección de Equipos de Protección Personal (PPE) en Obras AECO usando YOLOv8
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/TU_NOTEBOOK)
+
 
 ![Predicción del modelo](results/evidence/Predicción.png)
 
