@@ -54,8 +54,29 @@ El modelo solo analiza **presencia o ausencia de equipo de protección**.
 
 
 ---
+# 4.Marco Regulatorio (GDPR y EU AI Act)
+Este sistema puede estar sujeto a regulación europea en materia de inteligencia artificial y protección de datos.
+Normativas relevantes:
+- GDPR (Reglamento General de Protección de Datos)
+- EU AI Act (Regulación de sistemas de IA de alto riesgo)
+Clasificación del sistema:
+- Este sistema puede considerarse de "alto riesgo" si se utiliza en contextos reales de seguridad laboral.
+Riesgos legales:
+- Captura de imágenes de trabajadores (posible tratamiento de datos personales)
+- Uso en toma de decisiones relacionadas con seguridad
 
-# 4. Declaración de Limitaciones
+Medidas de mitigación:
+- El sistema NO identifica personas (solo detecta PPE)
+- Se recomienda anonimización (blur de rostros)
+- Uso limitado a "screening preliminar", no decisión final
+- Supervisión humana obligatoria
+
+Nota:
+El sistema debe cumplir con la normativa aplicable antes de cualquier uso en entorno real.
+
+---
+
+# 5. Declaración de Limitaciones
 
 Este modelo tiene limitaciones importantes y **NO debe utilizarse como sistema de seguridad autónomo**.
 
@@ -71,10 +92,21 @@ El modelo es únicamente una **herramienta de apoyo para inspección visual prel
 
 Debe existir siempre **revisión humana**.
 
+##Limitación crítica identificada:
+Durante la evaluación del modelo, las clases "no helmet" y "no vest" presentan un rendimiento extremadamente bajo (AP ≈ 0.000).
+Esto implica que el modelo NO detecta correctamente casos de incumplimiento de PPE.
+
+Impacto:
+- El sistema no identifica trabajadores sin casco o chaleco
+- Este fallo corresponde a un Falso Negativo de alto riesgo
+
+Conclusión:
+El modelo, en su estado actual, NO es adecuado para aplicaciones reales de seguridad laboral.
+Debe considerarse únicamente como un prototipo experimental.
 
 ---
 
-# 5. Declaración de Riesgos (FN vs FP)
+# 6. Declaración de Riesgos (FN vs FP)
 
 En aplicaciones de seguridad en construcción existen dos tipos principales de errores.
 
@@ -99,7 +131,7 @@ En seguridad laboral se prefiere **tolerar más FP antes que FN**.
 
 ---
 
-# 6. Humano en el Bucle
+# 7. Humano en el Bucle
 
 El sistema debe utilizarse solo como herramienta de apoyo.
 
@@ -114,7 +146,7 @@ El modelo **no sustituye a un inspector de seguridad**.
 
 ---
 
-# 7. Licencia del Proyecto
+# 8. Licencia del Proyecto
 
 Tipo de licencia del repositorio:
 
@@ -129,7 +161,7 @@ Esto significa que:
 
 ---
 
-# 8. Derechos del Dataset
+# 9. Derechos del Dataset
 
 El dataset utilizado en este proyecto:
 
@@ -147,5 +179,8 @@ Este repositorio **no redistribuye el dataset completo**, sino que referencia la
 Este proyecto es un **prototipo académico de visión computacional aplicado al sector AECO**.
 
 El modelo fue entrenado para demostrar el uso de YOLOv8 en la detección de Equipos de Protección Personal en obra.
-
-El sistema debe considerarse únicamente como una herramienta de **screening preliminar** y **no debe utilizarse como único sistema de verificación de seguridad**.
+El sistema debe considerarse únicamente como una herramienta de **screening preliminar y no debe utilizarse como único sistema de verificación de seguridad.**
+Descargo de responsabilidad:
+Este modelo es una herramienta asistiva para screening preliminar.
+Produce falsos negativos y falsos positivos.
+**NO** debe utilizarse como único sistema de verificación en decisiones críticas de seguridad.
