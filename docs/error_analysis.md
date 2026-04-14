@@ -66,7 +66,7 @@ Variaciones de iluminación no suficientemente representadas en el dataset.
 
 ---
 
-## 📈 Mejoras prioritarias del dataset (cuantificadas)
+## Mejoras prioritarias del dataset (cuantificadas)
 
 Para mejorar el rendimiento del modelo se proponen las siguientes acciones:
 
@@ -93,7 +93,7 @@ Para mejorar el rendimiento del modelo se proponen las siguientes acciones:
 
 ---
 
-## 🏗️ Evaluación final en contexto AECO
+## Evaluación final en contexto AECO
 
 En el contexto de seguridad en obra, los resultados del modelo presentan limitaciones críticas.
 
