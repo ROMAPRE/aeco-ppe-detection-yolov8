@@ -1,10 +1,10 @@
 # Detección de Equipos de Protección Personal (PPE) en Obras AECO usando YOLOv8
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/TU_NOTEBOOK)
+
 ![Predicción del modelo](results/evidence/Predicción.png)
 
 *Ejemplo de detección automática de trabajadores y equipos de protección personal utilizando YOLOv8.*
-
-## 1. Descripción del Problema (AECO)
 
 ## 1. Descripción del Problema (AECO)
 
@@ -291,7 +291,24 @@ https://github.com/ROMAPRE/aeco-ppe-detection-yolov8
 4. Este enfoque demuestra el potencial de la visión por computador para apoyar sistemas automáticos de monitoreo de seguridad en obras de construcción.
 ---
 
-## 13. Trabajo Futuro
+## 13. Gobernanza y consideraciones éticas
+
+Este proyecto considera implicaciones de privacidad y regulación en el uso de IA en entornos de construcción.
+
+- GDPR (Reglamento General de Protección de Datos): posible presencia de datos personales en imágenes (rostros de trabajadores)
+- EU AI Act: los sistemas de monitorización de seguridad pueden considerarse de alto riesgo
+
+Medidas adoptadas:
+
+- El modelo no identifica personas
+- Se centra únicamente en la detección de PPE
+- Se recomienda anonimización (blur de rostros) en aplicaciones reales
+
+Más detalles disponibles en:
+docs/governance_checklist.md
+
+---
+## 14. Trabajo Futuro
 
 Posibles líneas de mejora del proyecto incluyen:
 
@@ -302,8 +319,21 @@ Posibles líneas de mejora del proyecto incluyen:
 - Integrar el modelo en sistemas de monitoreo automático de seguridad en obra en tiempo real.
 
 ---
+## 15. Mejoras propuestas (cuantificadas)
 
-## 14. Modelo Entrenado
+A partir del análisis de errores, se identifican las siguientes necesidades de datos:
+
+- +50 imágenes de trabajadores SIN casco (no helmet)
+- +50 imágenes de trabajadores SIN chaleco (no vest)
+- +30 imágenes en condiciones nocturnas
+- +30 imágenes con lluvia o baja visibilidad
+- +30 imágenes con oclusión parcial
+
+Estas mejoras están directamente relacionadas con los principales fallos del modelo y son necesarias para aumentar el recall en clases críticas de seguridad.
+
+---
+
+## 16. Modelo Entrenado
 
 El modelo entrenado (`best.pt`) se generó durante el proceso de entrenamiento con YOLOv8.
 
@@ -314,7 +344,7 @@ modelo_entrenado.zip
 Este modelo puede utilizarse para realizar inferencias sobre nuevas imágenes de obra.
 ---
 
-## 15. Tecnologías Utilizadas
+## 17. Tecnologías Utilizadas
 
 Las principales tecnologías utilizadas en este proyecto fueron:
 
@@ -325,7 +355,7 @@ Las principales tecnologías utilizadas en este proyecto fueron:
 - **Google Colab** – entorno de ejecución en la nube
 - **Jupyter Notebook** – desarrollo del pipeline de entrenamiento
 
-## 16. Modelo entrenado
+## 18. Modelo entrenado
 
 El modelo entrenado (`best.pt`) generado durante el proceso de entrenamiento
 se incluye en este repositorio dentro de:
@@ -339,7 +369,7 @@ https://drive.google.com/file/d/1OY66H3SZTURFskA8Cf_CdRIFCpKmIAEL/view
 
 Permisos: acceso público en modo lectura (download enabled).
 
-## 17. Paquete PDF del proyecto
+## 19. Paquete PDF del proyecto
 
 El proyecto incluye un paquete PDF con la documentación resumida:
 
